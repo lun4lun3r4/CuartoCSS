@@ -1,0 +1,204 @@
+/* Estilos generales */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;/*Desactiva los estilos predeterminados de los enlaces*/
+    color: #529125;/*Los enlaces deben tener un color verde oscuro con el valor #529125*/
+  }
+  
+  a:hover {
+    color: #285616;/*Cuando el ratón pase sobre ellos, deben cambiar a un tono más oscuro con el valor #285616*/
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*Usa la fuente predeterminada Verdana, Geneva, Tahoma, sans-serif*/
+    background-image: url('paven.png');/*La página debe tener una imagen de fondo ubicada en la ruta /img/paven.png*/
+  }
+  
+
+  header {
+    width: 100%;/*debe ocupar el 100% del ancho disponible*/
+    text-align: center;
+  }
+  
+  #logotipo {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logotipo img {
+    width: 140px; /*ancho de 140 píxeles*/
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 40px;/*La fuente debe tener un tamaño de 40 píxeles*/
+    color: #70b231;/*y un color verde claro con el valor #70b231*/
+    text-shadow: 0px 2px 4px #333333;/*Aplica una sombra al texto del título con los siguientes valores: 0px 2px 4px #333333*/
+    text-align: center;/*El título del sitio debe estar centrado*/
+  }
+  
+ 
+  nav {
+    width: 100%;/*debe ocupar el 100% del ancho del navegador*/
+    background-color: #333333;/*El fondo del menú será de color #333333*/
+    height: 40px;/* y su altura será de 40 píxeles*/
+    box-shadow: 0px 0px 2px grey;/*Aplica una sombra alrededor del menú con 0px 0px 2px grey*/
+  }
+  
+  nav ul {
+    width: 1130px;/*La lista dentro del nav (ul) debe tener un ancho de 1130 píxeles*/
+    margin: 0 auto;
+    list-style: none;/*Desactiva los estilos predeterminados de lista*/
+  }
+  
+  nav ul li {
+    float: left;/*Los elementos de la lista deben estar alineados horizontalmente utilizando float: left;*/
+    line-height: 40px;/*Cada elemento debe tener una altura de línea de 40 píxeles*/
+  }
+  
+  nav ul li:hover {
+    background-color: #70b231;/*Al pasar el ratón sobre un elemento li, el fondo debe cambiar a verde claro (#70b231)*/
+    box-shadow: 0px 0px 4px grey inset;/*y añadir una sombra interior con box-shadow: 0px 0px 4px grey inset;*/
+  }
+  
+  nav ul li a {
+    display: block;/*Cada enlace (a) dentro de los elementos li debe ocupar todo el espacio del li utilizando display: block;*/
+    color: white;/*Los enlaces deben tener un color de texto blanco*/
+    padding: 0 10px;
+  }
+  
+
+  #content {
+    width: 1250px;/*ancho de 1250 píxeles*/
+    min-height: 1100px;/*mínimo de altura de 1100 píxeles*/
+    margin: 20px auto;
+  }
+  
+  #aside {
+    width: 200px;/*ancho de 200 píxeles*/
+    background-color: white;/*fondo de color blanco*/
+    border: 1px solid #ccc; /*Añade un borde gris claro #ccc*/
+    box-shadow: 0px 2px 2px #ccc;/*a sombra ligera con box-shadow: 0px 2px 2px #ccc;*/
+    position: relative; 
+    margin-left: -100px; 
+    margin-top: 20px;
+    float: left;
+  } 
+   
+  .widget {
+    position: relative;
+    padding: 10px 0;
+    width: 180px;/*los widgets deben tener un ancho de 180 píxeles*/
+    margin: 0 auto;
+}
+
+.widget:not(:last-child) {
+    border-bottom: 2px dashed #ccc;
+    margin-bottom: 20px; 
+}
+.widget form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /*estar centrados*/
+}
+
+.widget label {
+    margin-bottom: 5px; 
+    text-align: center;
+}
+
+.widget input[type="text"],
+.widget input[type="password"] {
+    width: 90%; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+  #aside h3 {
+    background-color: #dfdfdf;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    background-color: #70b231;/*fondo verde claro (#70b231)*/
+    border-radius: 5px;/*bordes redondeados*/
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  input[type="submit"]:hover {
+    box-shadow: 0px 0px 2px gray;/*Al pasar el ratón sobre ellos, deben tener una sombra ligera con box-shadow: 0px 0px 2px gray;*/
+  }
+
+  #aside a {
+  display: block; 
+  margin-top: 10px;
+  color: #529125; 
+  text-decoration: none; 
+}
+
+#aside a:hover {
+  color: #285616;
+}
+#enlaces ul {
+    list-style: none;/*Desactiva los estilos predeterminados de lista*/
+  }
+  #sections {
+    float: left;/*debe flotar hacia la izquierda*/
+    width: 75%;/*con un ancho del 75%*/
+    margin-left: 20px;
+  }
+  
+  #sections section {
+    margin-top: 40px;/*margen superior de 40 píxeles*/
+    background-color: white;/*fondo de color blanco*/
+    box-shadow: 0px 0px 4px #c9c9c9;/* sombra suave con box-shadow: 0px 0px 4px #c9c9c9;*/
+    padding: 20px;
+    margin-bottom: 30px; 
+    position:relative;
+  }
+  
+  #sections section p {
+    text-align: justify;/*Los párrafos dentro de las secciones deben estar justificados*/
+    margin-bottom: 20px; 
+  }
+
+   .stickers {
+    position: absolute;
+    top: 0;
+    height:0;
+    width: 100%;
+}
+
+.stickerOne{
+    position:absolute;
+    top:-20px;
+}
+
+.stickerTwo {
+    position:absolute;
+    right: 40px;
+    top:-20px;
+}
+  
+  footer {
+    width: 100%;/*ancho del 100%*/
+    text-align: center;/*y estar centrado*/
+    background-color: #333333;/*El fondo debe ser de color #333333 (gris oscuro) */
+    color: white;/*y el texto de color blanco*/
+    padding: 10px 0;
+    box-shadow: 0px 0px 2px gray;/*El pie de página debe tener una sombra ligera con box-shadow: 0px 0px 2px gray;*/
+    clear: both;
+  }
+  
